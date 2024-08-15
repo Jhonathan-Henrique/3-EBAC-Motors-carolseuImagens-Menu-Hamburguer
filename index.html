@@ -158,7 +158,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section id="contato">
         <div class="container">
             <h2>Entre em contato</h2>
             <form>
@@ -217,37 +217,7 @@
     <script src="./JS/jquery.mask.min.js"></script>
     <script src="./JS/jquery.validate.min.js"></script>
     <script src="./JS/messages_pt_BR.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#carolseu-imagens').slick({
-                autoplay: true
-            })
-
-            $('.menu-hamburguer').click(function () {
-                $('nav').slideToggle()
-            })
-            $('#telefone').mask('(00) 00000-0000', {
-                placeholder: '(__) _____-____'
-            })
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    telefone: {
-                        required: true
-                    }
-                },
-                messages: {
-                    nome: 'Por favor, insira o seu nome'
-                }
-            })
-        })
-    </script>
+    <script src="./JS/main.js"></script>
 </body>
 
 </html>7
